@@ -1,0 +1,17 @@
+.pokemon-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+.pokemon-card {
+    min-height: 100%;
+}
+
+@media (min-width: 992px) {
+    .pokemon-image {
+        max-height: calc((100vh - 640px) / 2);
+        min-height: 120px;
+    }
+}

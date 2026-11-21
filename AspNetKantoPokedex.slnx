@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="global.json" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/pokedex.client/pokedex.client.esproj">
+      <Build />
+      <Deploy />
+    </Project>
+    <Project Path="src/Pokedex.Server/Pokedex.Server.csproj" Id="4b636dc7-5c7d-4794-b752-f66fd9ee4f4a" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Pokedex.Server.Tests/Pokedex.Server.Tests.csproj" Id="88427427-83a9-4ccf-911b-852a672f74b6" />
+  </Folder>
+</Solution>

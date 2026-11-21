@@ -1,0 +1,17 @@
+@Pokedex.Server_HostAddress = http://localhost:5219
+
+### All Pokemon (for the dropdowns)
+GET {{Pokedex.Server_HostAddress}}/api/pokemon
+Accept: application/json
+
+### Pikachu
+GET {{Pokedex.Server_HostAddress}}/api/pokemon/25
+Accept: application/json
+
+### Random Pokemon
+GET {{Pokedex.Server_HostAddress}}/api/pokemon/random
+Accept: application/json
+
+### Invalid number (should return 400 Bad Request)
+GET {{Pokedex.Server_HostAddress}}/api/pokemon/152
+Accept: application/json
