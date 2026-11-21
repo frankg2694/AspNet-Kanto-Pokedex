@@ -68,6 +68,9 @@ app.UseStaticFiles(staticFileOptions);
 
 app.MapControllers();
 
+// Health check, used by Azure to see if the app is up
+app.MapGet("/healthz", () => "OK");
+
 // Any other URL goes to index.html
 app.MapFallbackToFile("index.html", staticFileOptions);
 
